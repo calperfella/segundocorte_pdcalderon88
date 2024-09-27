@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Correos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        textarea, input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Validar Correos Electrónicos</h2>
+
+    <div class="form-group">
+        <label for="emailInput">Ingrese una cadena de correos:</label>
+        <textarea id="emailInput" rows="5" placeholder="Ej: ejemplo@correo.com, otro@correo.com; <otro2@correo.com>"></textarea>
+    </div>
+
+    <button id="submitButton">Enviar</button>
+
+    <div class="form-group">
+        <label for="validEmails">Correos válidos:</label>
+        <textarea id="validEmails" rows="3" readonly></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="invalidEmails">Correos inválidos:</label>
+        <textarea id="invalidEmails" rows="3" readonly></textarea>
+    </div>
+
+    <script src="validarCorreos.js"></script>
+    
+</body>
+</html>
